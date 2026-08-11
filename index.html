@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JatiCraft - Toko Mebel Kayu Jati Jepara &amp; Custom Furniture</title>
+  <meta name="description" content="Toko mebel fisik &amp; online kayu jati asli Jepara. Menyediakan set meja makan, sofa, dipan, dan custom furniture. Garansi kayu perhutani asli.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://username.github.io/repository-name/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="JatiCraft - Toko Mebel Kayu Jati Jepara">
+  <meta property="og:description" content="Furniture kayu jati perhutani kualitas ekspor langsung dari workshop fisik Jepara.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&h=630&fit=crop&q=80">
+
+  <!-- Schema.org Data Terstruktur Bisnis Fisik -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FurnitureStore",
+    "name": "JatiCraft Furniture Jepara",
+    "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Raya Jepara - Kudus Km 12, Tahunan",
+      "addressLocality": "Jepara",
+      "addressRegion": "Jawa Tengah",
+      "postalCode": "59427",
+      "addressCountry": "ID"
+    },
+    "telephone": "+6281234567890",
+    "openingHours": "Mo-Sa 08:00-17:00"
+  }
+  </script>
+
+  <!-- Inline Critical CSS (PageSpeed 100 Target) -->
+  <style>
+    :root {
+      --primary: #5c3a21;
+      --primary-dark: #3d2413;
+      --primary-light: #f7f2ea;
+      --accent: #2e7d32;
+      --accent-hover: #236327;
+      --bg: #faf7f2;
+      --surface: #ffffff;
+      --text: #1a1a1a;
+      --text-muted: #5a5a5a;
+      --border: #e6dfd5;
+      --shadow-sm: 0 2px 8px rgba(61, 36, 19, 0.04);
+      --shadow-md: 0 8px 24px rgba(61, 36, 19, 0.07);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; }
+    .container { max-width: 1140px; margin: 0 auto; padding: 0 16px; }
+    
+    /* Header & Nav */
+    header { background: var(--surface); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+    nav { display: flex; justify-content: space-between; align-items: center; height: 64px; }
+    .logo { font-size: 1.35rem; font-weight: 700; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
+    .nav-links { display: flex; gap: 20px; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--text); font-weight: 500; font-size: 0.9rem; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--primary); }
+
+    /* Profil Toko Fisik Section */
+    .profile-section { padding: 40px 0; border-bottom: 1px solid var(--border); }
+    .profile-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; }
+    @media (max-width: 768px) { .profile-grid { grid-template-columns: 1fr; } .nav-links { display: none; } }
+    .profile-text h1 { font-size: 2rem; color: var(--primary-dark); margin-bottom: 12px; line-height: 1.25; font-weight: 700; }
+    .profile-text p { color: var(--text-muted); margin-bottom: 16px; font-size: 0.98rem; }
+    
+    /* Map Card */
+    .map-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; text-align: center; box-shadow: var(--shadow-sm); }
+    .map-preview { width: 100%; height: 210px; object-fit: cover; border-radius: 8px; margin-bottom: 12px; background: #eee; }
+    .btn-map { display: inline-block; background: var(--primary); color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; font-size: 0.88rem; transition: background 0.2s; }
+    .btn-map:hover { background: var(--primary-dark); }
+
+    /* Layout Label Iklan */
+    .ads-label { text-align: center; font-size: 0.7rem; color: #a09080; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; font-weight: 600; }
+
+    /* 1. IKLAN ATAS KATALOG (FULL WIDTH) */
+    .ads-top-container { margin: 32px 0 16px; }
+    .ads-full-width { background: var(--surface); border: 1px dashed var(--border); border-radius: 8px; padding: 20px; text-align: center; min-height: 90px; display: flex; align-items: center; justify-content: center; }
+
+    /* Catalog Header & Filter */
+    .catalog-header { padding: 24px 0 16px; text-align: center; }
+    .catalog-header h2 { font-size: 1.8rem; color: var(--primary-dark); margin-bottom: 8px; }
+    .filter-bar { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 20px 0 32px; }
+    .filter-btn { background: var(--surface); border: 1px solid var(--border); padding: 8px 18px; border-radius: 20px; cursor: pointer; font-size: 0.88rem; font-weight: 600; color: var(--text-muted); transition: all 0.2s; }
+    .filter-btn.active, .filter-btn:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+    /* Catalog Cards Grid */
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; padding-bottom: 16px; }
+    .product-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow-sm); transition: transform 0.2s, box-shadow 0.2s; }
+    .product-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .product-img { width: 100%; height: 210px; object-fit: cover; background: #eee; }
+    .product-body { padding: 18px; display: flex; flex-direction: column; flex-grow: 1; }
+    .badge { align-self: flex-start; background: var(--primary-light); color: var(--primary); font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 4px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .product-card h3 { font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 10px; line-height: 1.35; }
+    
+    .package-box { background: #faf5ef; border: 1px dashed var(--border); padding: 10px 12px; border-radius: 6px; font-size: 0.82rem; color: var(--primary-dark); margin-bottom: 14px; }
+    .package-box strong { display: block; margin-bottom: 2px; }
+    .product-price { font-size: 1.25rem; font-weight: 700; color: var(--primary); margin-bottom: 16px; }
+    
+    .card-actions { display: flex; gap: 8px; margin-top: auto; }
+    .btn-detail { flex: 1; text-align: center; background: var(--primary); color: #fff; text-decoration: none; padding: 10px; border-radius: 6px; font-weight: 600; font-size: 0.88rem; transition: background 0.2s; }
+    .btn-detail:hover { background: var(--primary-dark); }
+    .btn-share { background: var(--primary-light); border: 1px solid var(--border); color: var(--primary-dark); padding: 10px 12px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.88rem; display: flex; align-items: center; justify-content: center; }
+
+    /* 2. IKLAN BAWAH KATALOG (3 SLOT GRID) */
+    .ads-bottom-section { margin: 40px 0; }
+    .ads-grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+    .ads-card { background: var(--surface); border: 1px dashed var(--border); border-radius: 12px; padding: 16px; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 280px; box-shadow: var(--shadow-sm); }
+
+    /* 3. DESAIN BARU KONSULTASI & CONTACT PERSON (MODERN, ELEGAN, PREMIUM) */
+    .consult-wrapper {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px 28px;
+      margin: 50px 0 20px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+    .consult-wrapper::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary) 0%, #a0724e 50%, var(--primary-dark) 100%);
+    }
+    .consult-header { text-align: center; max-width: 680px; margin: 0 auto 32px; }
+    .consult-header h2 { font-size: 1.75rem; color: var(--primary-dark); margin-bottom: 8px; font-weight: 700; letter-spacing: -0.3px; }
+    .consult-header p { color: var(--text-muted); font-size: 0.98rem; }
+
+    /* Grid Kartu Konsultasi */
+    .consult-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .consult-card {
+      background: #fdfbf7;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px 20px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+    .consult-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary);
+      background: var(--surface);
+      box-shadow: var(--shadow-md);
+    }
+    
+    .icon-box {
+      width: 48px;
+      height: 48px;
+      background: var(--primary-light);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      color: var(--primary);
+    }
+    .consult-card:hover .icon-box {
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    .consult-card h3 { font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 6px; font-weight: 700; }
+    .consult-card p { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 20px; line-height: 1.5; flex-grow: 1; }
+    
+    .consult-action {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .consult-card:hover .consult-action { color: var(--accent); }
+    .consult-action svg { transition: transform 0.2s; }
+    .consult-card:hover .consult-action svg { transform: translateX(4px); }
+
+    /* Footer (AdSense Compliant) */
+    footer { background: var(--primary-dark); color: #fff; padding: 48px 0 24px; margin-top: 60px; }
+    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; margin-bottom: 32px; }
+    .footer-col h4 { font-size: 1.05rem; color: #e2d9cf; margin-bottom: 14px; font-weight: 600; }
+    .footer-col p, .footer-col ul { font-size: 0.88rem; color: #ccc; list-style: none; line-height: 1.8; }
+    .footer-col a { color: #ccc; text-decoration: none; transition: color 0.2s; }
+    .footer-col a:hover { color: #fff; text-decoration: underline; }
+    .copyright { text-align: center; border-top: 1px solid #52341d; padding-top: 20px; font-size: 0.82rem; color: #aaa; }
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigasi -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">JatiCraft Jepara</a>
+        <ul class="nav-links">
+          <li><a href="#profil">Profil Toko</a></li>
+          <li><a href="#katalog">Katalog</a></li>
+          <li><a href="#konsultasi">Konsultasi</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Profil Toko Fisik & Peta -->
+    <section class="profile-section" id="profil">
+      <div class="profile-grid">
+        <div class="profile-text">
+          <h1>Toko Mebel Kayu Jati Jepara Asli &amp; Berkualitas</h1>
+          <p>Berdiri sejak tahun 2008 di Jepara, <strong>JatiCraft</strong> memproduksi sendiri setiap unit mebel menggunakan kayu jati perhutani resmi (TPK) berkualitas tinggi dengan konstruksi presisi khas pengrajin Jepara.</p>
+          <p>Kunjungi galeri fisik kami untuk melihat langsung kehalusan finishing, keindahan serat kayu, dan jaminan kekuatan produk kami.</p>
+        </div>
+        
+        <div class="map-card">
+          <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=300&fit=crop&q=80" alt="Lokasi Workshop JatiCraft Jepara" class="map-preview" width="600" height="300" loading="eager">
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;"><strong>Alamat Workshop Fisik:</strong><br>Jl. Raya Jepara - Kudus Km 12, Tahunan, Jepara</p>
+          <a href="https://maps.google.com/?q=Jepara+Jawa+Tengah" target="_blank" rel="noopener" class="btn-map">📍 Buka Rute Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. IKLAN ADSENSE TOP BANNER (FULL WIDTH DI ATAS KATALOG) -->
+    <section class="ads-top-container">
+      <div class="ads-label">-- IKLAN SPONSORED / ADVERTISEMENT --</div>
+      <div class="ads-full-width">
+        <!-- SISIPKAN KODE ADSENSE FULL WIDTH DI SINI -->
+        <p style="color: #999; font-size: 0.85rem;">[ Ruang Iklan AdSense Leaderboard Full-Width ]</p>
+      </div>
+    </section>
+
+    <!-- Katalog Produk Otomatis -->
+    <section id="katalog">
+      <div class="catalog-header">
+        <h2>Katalog Furniture Kayu Jati Unggulan</h2>
+        <p>Pilihan set mebel lengkap untuk ruang tamu, ruang makan, dan kamar tidur.</p>
+
+        <!-- Filter Kategori -->
+        <div class="filter-bar">
+          <button class="filter-btn active" onclick="filterCategory('all', this)">Semua Produk</button>
+          <button class="filter-btn" onclick="filterCategory('meja', this)">Meja Makan</button>
+          <button class="filter-btn" onclick="filterCategory('sofa', this)">Sofa &amp; Kursi</button>
+          <button class="filter-btn" onclick="filterCategory('kamar', this)">Dipan &amp; Kamar</button>
+          <button class="filter-btn" onclick="filterCategory('lemari', this)">Lemari &amp; Bufet</button>
+        </div>
+      </div>
+
+      <!-- Grid Produk Otomatis dari JSON -->
+      <div class="product-grid" id="productGrid">
+        <p style="text-align: center; grid-column: 1/-1;">Memuat katalog produk...</p>
+      </div>
+    </section>
+
+    <!-- 2. IKLAN ADSENSE BOTTOM (3 SLOT GRID BERJAJAR SEJAJAR) -->
+    <section class="ads-bottom-section">
+      <div class="ads-label">-- IKLAN SPONSORED / ADVERTISEMENT --</div>
+      <div class="ads-grid-3">
+        
+        <!-- AdSense Slot 1 -->
+        <div class="ads-card">
+          <p style="color: #999; font-size: 0.85rem;">[ Ruang Iklan AdSense Native 1 ]</p>
+        </div>
+
+        <!-- AdSense Slot 2 -->
+        <div class="ads-card">
+          <p style="color: #999; font-size: 0.85rem;">[ Ruang Iklan AdSense Native 2 ]</p>
+        </div>
+
+        <!-- AdSense Slot 3 -->
+        <div class="ads-card">
+          <p style="color: #999; font-size: 0.85rem;">[ Ruang Iklan AdSense Native 3 ]</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. DESAIN BARU KONSULTASI & CONTACT PERSON (ELEGAN, MODERN & BERKELAS) -->
+    <section class="consult-wrapper" id="konsultasi">
+      <div class="consult-header">
+        <h2>Layanan Konsultasi &amp; Pemesanan Custom</h2>
+        <p>Hubungi desainer &amp; tim ahli kayu kami untuk diskusi ukuran, jenis finishing, hingga estimasi biaya pengiriman ke kota Anda.</p>
+      </div>
+
+      <div class="consult-grid">
+        
+        <!-- Kartu 1: Cek Ongkir -->
+        <a href="https://wa.me/6281234567890?text=Halo%20JatiCraft,%20saya%20ingin%20menanyakan%20estimasi%20ongkos%20kirim%20dan%20keamanan%20pengiriman" target="_blank" rel="noopener" class="consult-card">
+          <div class="icon-box">
+            <!-- SVG Icon Truk/Pengiriman -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+          </div>
+          <h3>Cek Estimasi Ongkos Kirim</h3>
+          <p>Dapatkan rincian biaya pengiriman bergaransi menggunakan ekspedisi khusus mebel ke seluruh wilayah Indonesia.</p>
+          <div class="consult-action">
+            Tanya Pengiriman 
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </a>
+
+        <!-- Kartu 2: Custom Design -->
+        <a href="https://wa.me/6281234567890?text=Halo%20JatiCraft,%20saya%20ingin%20konsultasi%20pembuatan%20furniture%20custom%20desain" target="_blank" rel="noopener" class="consult-card">
+          <div class="icon-box">
+            <!-- SVG Icon Custom Design/Ruler -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.4 2.4 0 0 1 0-3.4l2.6-2.6a2.4 2.4 0 0 1 3.4 0l12.6 12.6z"></path><line x1="14.5" y1="12.5" x2="16.5" y2="10.5"></line><line x1="11.5" y1="9.5" x2="13.5" y2="7.5"></line><line x1="8.5" y1="6.5" x2="10.5" y2="4.5"></line></svg>
+          </div>
+          <h3>Konsultasi Custom Furniture</h3>
+          <p>Diskusikan sketsa, penyesuaian ukuran ruangan, jenis kain sofa, hingga opsi finishing kayu jati sesuai selera Anda.</p>
+          <div class="consult-action">
+            Diskusi Desain
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </a>
+
+        <!-- Kartu 3: Garansi Produk -->
+        <a href="https://wa.me/6281234567890?text=Halo%20JatiCraft,%20saya%20ingin%20menanyakan%20detail%20garansi%20dan%20kualitas%20kayu%20jati" target="_blank" rel="noopener" class="consult-card">
+          <div class="icon-box">
+            <!-- SVG Icon Perisai Garansi -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+          </div>
+          <h3>Garansi Resmi 12 Bulan</h3>
+          <p>Jaminan perlindungan kayu jati perhutani tua tahan rayap dan presisi konstruksi resmi selama 1 tahun penuh.</p>
+          <div class="consult-action">
+            Cek Syarat Garansi
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (Syarat AdSense) -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>JatiCraft Jepara</h4>
+          <p><strong>Alamat Workshop Fisik:</strong><br>
+          Jl. Raya Jepara - Kudus Km 12, Tahunan, Kabupaten Jepara, Jawa Tengah 59427 Indonesia.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kontak &amp; Operasional</h4>
+          <p><strong>WhatsApp:</strong> +62 812-3456-7890<br>
+          <strong>Email:</strong> info@jaticraft.com<br><br>
+          <strong>Jam Operasional:</strong><br>
+          Senin - Sabtu: 08:00 - 17:00 WIB</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Halaman Informasi</h4>
+          <ul>
+            <li><a href="about.html">Tentang Kami (About Us)</a></li>
+            <li><a href="contact.html">Hubungi Kami (Contact Us)</a></li>
+            <li><a href="privacy-policy.html">Kebijakan Privasi (Privacy Policy)</a></li>
+            <li><a href="terms.html">Syarat &amp; Ketentuan (Terms)</a></li>
+            <li><a href="disclaimer.html">Sanggahan (Disclaimer)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        &copy; 2026 JatiCraft Mebel Jepara. Hak Cipta Dilindungi. Hosted on GitHub Pages.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Read JSON & Sharing -->
+  <script>
+    let allProducts = [];
+
+    fetch('products.json')
+      .then(res => res.json())
+      .then(data => {
+        allProducts = data;
+        renderProducts(allProducts);
+      })
+      .catch(err => {
+        // Penjelasan aman jika dibuka via file:// lokal tanpa server
+        document.getElementById('productGrid').innerHTML = `
+          <div style="text-align:center; grid-column:1/-1; padding:20px; background:#fff; border:1px solid #e2d9cf; border-radius:8px;">
+            <p style="color:#c62828; font-weight:600; margin-bottom:4px;">Gagal Memuat File JSON Produk</p>
+            <p style="font-size:0.85rem; color:#666;">Jika menguji di laptop lokal, jalankan dengan <strong>VS Code Live Server</strong> atau upload ke <strong>GitHub Pages</strong> agar fitur fetch JSON diizinkan oleh browser.</p>
+          </div>`;
+      });
+
+    function renderProducts(products) {
+      const grid = document.getElementById('productGrid');
+      grid.innerHTML = '';
+
+      if(products.length === 0) {
+        grid.innerHTML = '<p style="text-align:center; grid-column:1/-1; padding:20px;">Tidak ada produk dalam kategori ini.</p>';
+        return;
+      }
+
+      products.forEach((p, idx) => {
+        const card = document.createElement('article');
+        card.className = 'product-card';
+        card.innerHTML = `
+          <img src="${p.image}" alt="${p.title}" class="product-img" width="600" height="400" loading="${idx < 2 ? 'eager' : 'lazy'}">
+          <div class="product-body">
+            <span class="badge">${p.badge}</span>
+            <h3>${p.title}</h3>
+            
+            <div class="package-box">
+              <strong>Isi Paket Unit:</strong>
+              ${p.packageUnits || '1 Unit Mebel Solid'}
+            </div>
+
+            <div class="product-price">${p.price}</div>
+            
+            <div class="card-actions">
+              <a href="detail.html?id=${p.id}" class="btn-detail">Lihat Detail</a>
+              <button class="btn-share" onclick="shareProduct('${p.title}', 'detail.html?id=${p.id}')" title="Bagikan Produk" aria-label="Bagikan Produk">
+                🔗
+              </button>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function filterCategory(cat, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      if (cat === 'all') renderProducts(allProducts);
+      else renderProducts(allProducts.filter(p => p.category === cat));
+    }
+
+    function shareProduct(title, relativeUrl) {
+      const fullUrl = window.location.origin + window.location.pathname.replace('index.html', '') + relativeUrl;
+      if (navigator.share) {
+        navigator.share({ title: title, url: fullUrl }).catch(() => {});
+      } else {
+        const waUrl = `https://wa.me/?text=${encodeURIComponent('Cek produk mebel ini: ' + title + ' - ' + fullUrl)}`;
+        window.open(waUrl, '_blank');
+      }
+    }
+  </script>
+</body>
+</html>
