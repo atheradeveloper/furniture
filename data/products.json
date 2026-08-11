@@ -1,5 +1,43 @@
-{
-  "id": "meja-makan-jati-6-kursi",
-  "title": "Set Meja Makan Jati Minimalis Modern",
-  "packageUnits": "📦 1 Meja Utama + 🪑 4 Kursi Tunggal + 🪑 1 Kursi Panjang"
-}
+[
+  {
+    "id": "meja-makan-jati-6-kursi",
+    "category": "meja",
+    "badge": "Meja Makan",
+    "title": "Set Meja Makan Jati Minimalis Modern",
+    "packageUnits": "1 Meja Utama + 4 Kursi Tunggal + 1 Kursi Panjang",
+    "price": "Rp 4.500.000",
+    "numericPrice": 4500000,
+    "image": "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=600&h=400&fit=crop&q=80",
+    "thumbs": [
+      "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&h=600&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?w=800&h=600&fit=crop&q=80"
+    ],
+    "specs": {
+      "Bahan Utama": "Kayu Jati Perhutani (TPK)",
+      "Ukuran Meja": "160 cm x 90 cm x 75 cm",
+      "Finishing": "Natural Melamine Doff",
+      "Garansi": "12 Bulan"
+    },
+    "description": "Set meja makan kayu jati berkualitas tinggi buatan Jepara. Cocok untuk ruang makan keluarga minimalis modern."
+  },
+  {
+    "id": "sofa-tamu-jati-scandinavian",
+    "category": "sofa",
+    "badge": "Sofa & Kursi",
+    "title": "Set Sofa Tamu Jati Scandinavian",
+    "packageUnits": "1 Sofa 3-Seater + 2 Kursi Single + 1 Meja Tamu Jati",
+    "price": "Rp 5.200.000",
+    "numericPrice": 5200000,
+    "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop&q=80",
+    "thumbs": [
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=600&fit=crop&q=80"
+    ],
+    "specs": {
+      "Bahan Utama": "Kayu Jati Grade A",
+      "Busa & Kain": "Royal Foam & Kain Canvas Premium",
+      "Finishing": "Walnut Brown",
+      "Garansi": "12 Bulan"
+    },
+    "description": "Sofa tamu gaya Scandinavian berbahan kayu jati pilihan. Nyaman, empuk, dan menambah kesan mewah pada ruang tamu."
+  }
+]
